@@ -22,9 +22,9 @@ const SearchedResults = () => {
   }, [search]);
 
   return meals ? (
-    <div className="px-12 py-4 h-screen w-screen overflow-y-scroll flex flex-col gap-10 ">
+    <div className="px-12 py-4 h-screen w-screen  overflow-y-scroll flex flex-col gap-10 ">
       <h1>Results for {search}</h1>
-      <div className="flex flex-wrap gap-12">
+      <div className="flex flex-wrap justify-center gap-40">
         {meals.map((meal) => (
           <SearchResult key={meal.idMeal} meal={meal} />
         ))}

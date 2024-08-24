@@ -15,7 +15,9 @@ const SearchResult = ({ meal }) => {
       <img className="w-full " src={meal.strMealThumb} alt={meal.strMeal} />
       <div className="max-h-[80vh] px-4">
         <div className="flex flex-col mt-6 ">
-          <span className="text-4xl font-bold ">{meal.strMeal}</span>
+          <span className="text-4xl font-bold line-clamp-2">
+            {meal.strMeal}
+          </span>
           <span className="flex mt-2 items-center">{meal.strCategory}</span>
         </div>
         <div className="my-6 flex flex-col gap-1">
